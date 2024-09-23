@@ -1,4 +1,9 @@
+# Project: to extract the most repeated word in a list of reviews and how much times it was repeated.
+
 import string
+
+## Defining the function:
+
 def analyze_reviews(reviews):
   total_rating = 0
   word_count = {}
@@ -21,7 +26,7 @@ def analyze_reviews(reviews):
   most_common_words_str = ", ".join(most_common_words)
   print(f"Most Common Words: {most_common_words_str}")
 
-# test the function below
+
 reviews = [
   {"id": 1, "rating": 5, "review": "The coffee was fantastic.", "date": "2022-05-01"},
   {"id": 2, "rating": 4, "review": "Excellent atmosphere. Love the modern design!", "date": "2022-05-15"},
@@ -39,4 +44,9 @@ reviews = [
   {"id": 14, "rating": 4, "review": "Love their rewards program.", "date": "2022-07-25"},
 ]
 
+## Calling the function:
+
 analyze_reviews(reviews)
+
+
+#-------------------------------------------------End-------------------------------------------------#
