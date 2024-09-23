@@ -1,6 +1,5 @@
 # Objetivo: Analizar la situación de los alojamientos tipo airbnb in madrid
             
-
 import os   # Libreria para trabajar con metodos del sistema operativo
 
 from os import system
@@ -17,14 +16,11 @@ import matplotlib.pyplot as plt
 
 # Creamos un DataFrame desde la url del fichero csv
 
-
 alojamientos = pd.read_csv(ruta, sep=';', decimal=',')
 
 alojamientos['precio_persona'] = alojamientos['precio_persona'].round(2).convert_dtypes()
 
 alojamientos['distrito'] = alojamientos['distrito'].astype(str)
-
-
 
 
 # Apartado 1: Función que dibuja un diagrama de barras con el número de alojamientos por distritos.
@@ -47,8 +43,6 @@ def barras_alojamientos_distritos(alojamientos):
 
 # llamada a la función: 
 barras_alojamientos_distritos(alojamientos)
-
-
 
 
 # Apartado 2: Función que dibuja un diagrama de barras con los porcentajes acumulados de tipos de alojamientos por distritos.
@@ -80,8 +74,6 @@ def barras_tipos_alojamientos_distritos(alojamientos):
 barras_tipos_alojamientos_distritos(alojamientos)
 
 
-
-
 # Apartado 3: Función que dibuja un diagrama de sectores con la distribución del número de alojamientos por anfitrión de unos tipos y en unos distritos dados.
 
 
@@ -106,12 +98,9 @@ def sectores_tipos_alojamientos_anfitrion(alojamientos, distritos, tipos):
 sectores_tipos_alojamientos_anfitrion(alojamientos, ['Villaverde', 'Vicálvaro'], ['Entire home/apt', 'Hotel room'])
 
 
-
-
-
 # Apartado 4: Función que dibuja un diagrama de barras con los precios medios por persona y día de cada distrito.
 
-# Apartado 6: Función que dibuja un diagrama de barras con la distribución de precios por persona y día.
+# Apartado 5: Función que dibuja un diagrama de barras con la distribución de precios por persona y día.
 
 
 def barras_precios_medios_persona(alojamientos):
@@ -137,7 +126,7 @@ barras_precios_medios_persona(alojamientos)
 
 
 
-# Apartado 5: Función que dibuja un diagrama de dispersión con el precio por noche y persona y la puntuación en unos distritos dados.
+# Apartado 6: Función que dibuja un diagrama de dispersión con el precio por noche y persona y la puntuación en unos distritos dados.
 
 
 def precios_puntuacion_distritos(alojamientos, distritos):
