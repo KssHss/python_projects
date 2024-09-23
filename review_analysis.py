@@ -1,3 +1,8 @@
+Project: to analyze a list of reviews and extractn the following
+  * the average rating
+  * the most repeated word 
+  * the month name with the highest number of reviews
+
 import string 
 
 # to define the function
@@ -55,5 +60,8 @@ reviews = [
   {"id": 14, "rating": 4, "review": "Love their rewards program.", "date": "2022-07-25"},
 ]
 
-# to call the function 
+# to call the function:
+
 analyze_reviews(reviews)
+
+#-------------------------------------------------End-------------------------------------------------#
