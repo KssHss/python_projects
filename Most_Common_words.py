@@ -1,4 +1,7 @@
 import string
+
+# defining the function:
+
 def analyze_reviews(reviews):
   total_rating = 0
   word_count = {}
@@ -22,6 +25,7 @@ def analyze_reviews(reviews):
   print(f"Most Common Words: {most_common_words_str}")
 
 # test the function below
+
 reviews = [
   {"id": 1, "rating": 5, "review": "The coffee was fantastic.", "date": "2022-05-01"},
   {"id": 2, "rating": 4, "review": "Excellent atmosphere. Love the modern design!", "date": "2022-05-15"},
