@@ -152,5 +152,5 @@ def precios_puntuacion_distritos(alojamientos, distritos):
 # llamada a la función: 
 precios_puntuacion_distritos(alojamientos, ['Arganzuela', 'Centro'])
 
-
+#-------------------------------------------------Fin-------------------------------------------------#
 
