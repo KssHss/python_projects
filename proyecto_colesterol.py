@@ -1,4 +1,4 @@
-# Apartado 4: Uso de MatPlotLib y SciPy
+MatPlotLib y SciPy
 
 # El fichero “control_colesterol.csv" tiene la información anónima de un estudio de 60 pacientes donde
     # se indica su edad, peso, estatura y niveles de colesterol. 
