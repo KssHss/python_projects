@@ -9,7 +9,7 @@ import os   # Libreria para trabajar con metodos del sistema operativo
 from os import system
 system("cls")
 
-carpeta = "C:/proyectos/ejercicio_77/"          # Indicar carpeta de destino de los ficheros que se vayan generando
+carpeta = "C:/proyectos/colesterol/"          # Indicar carpeta de destino de los ficheros que se vayan generando
 fichero = ""
 
 ruta = os.path.join(carpeta, fichero)
