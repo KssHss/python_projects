@@ -37,7 +37,7 @@ def barras_alojamientos_distritos(alojamientos):
     # Ponemos una rejilla
     ax.grid(axis = 'y', color = 'lightgray', linestyle = 'dashed')
     # Mostramos y guardamos el gráfico.
-    plt.savefig("c:/proyectos/ejercicio71/diagrama_apartado1.png")
+    plt.savefig("c:/proyectos/airbnb/diagrama_apartado1.png")
     plt.show()
     return
 
@@ -66,7 +66,7 @@ def barras_tipos_alojamientos_distritos(alojamientos):
     # Dibujar la leyenda fuera del área del gráfico
     plt.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
    # Mostramos y guardamos el gráfico.
-    plt.savefig("c:/proyectos/ejercicio71/diagrama_apartado2.png")
+    plt.savefig("c:/proyectos/airbnb/diagrama_apartado2.png")
     plt.show()
     return
 
@@ -90,7 +90,7 @@ def sectores_tipos_alojamientos_anfitrion(alojamientos, distritos, tipos):
     # Eliminamos la etiqueta del eje y
     ax.set_ylabel('')
    # Mostramos y guardamos el gráfico.
-    plt.savefig("c:/proyectos/ejercicio71/diagrama_apartado3.png")
+    plt.savefig("c:/proyectos/airbnb/diagrama_apartado3.png")
     plt.show()
     return
 
@@ -116,7 +116,7 @@ def barras_precios_medios_persona(alojamientos):
     # Ponemos una rejilla
     ax.grid(axis = 'y', color = 'lightgray', linestyle = 'dashed')
     # Mostramos y guardamos el gráfico.
-    plt.savefig("c:/proyectos/ejercicio71/diagrama_apartado4_6.png")
+    plt.savefig("c:/proyectos/airbnb/diagrama_apartado4_6.png")
     plt.show()
     return
 
@@ -145,7 +145,7 @@ def precios_puntuacion_distritos(alojamientos, distritos):
     ax.set_xlabel('Precio en €')
     ax.set_ylabel('Puntuación')
     # Mostramos y guardamos el gráfico.
-    plt.savefig("c:/proyectos/ejercicio71/diagrama_apartado5.png")
+    plt.savefig("c:/proyectos/airbnb/diagrama_apartado5.png")
     plt.show()
     return
 
