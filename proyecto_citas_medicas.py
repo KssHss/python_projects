@@ -21,7 +21,7 @@
 import os   # Libreria para trabajar con metodos del sistema operativo
 from os import system
 
-carpeta = "C:/proyectos/ejercicio_77/"
+carpeta = "C:/proyectos/citas_medicas/"
 fichero = "citas.csv"
 
 ruta = os.path.join(carpeta, fichero)
@@ -169,7 +169,7 @@ def db_a_fichero(cursor, carpeta, fichero):
             mensaje.write(linea + "\n")
 
     
-# fichero_citas = db_a_fichero(cursor1, carpeta, fichero)
+fichero_citas = db_a_fichero(cursor1, carpeta, fichero)
 
 
 # 2. Una función que permita añadir una cita a la base de datos. 
@@ -254,7 +254,7 @@ def fc_lista_citas_paciente(cursor):
     cursor.execute("select * from citas where dni_nie = '" + dni_nie + "';") 
     
     return
-# lista_citas_paciente = fc_lista_citas_paciente(cursor3)
+lista_citas_paciente = fc_lista_citas_paciente(cursor3)
 
 with open(carpeta + 'fichero_lista_citas_paciente.csv', mode="w") as mensaje: 
 
@@ -320,7 +320,7 @@ def fc_fecha_modificada(cursor, nueva_fecha):
         print(linea)
         
 
-# cita_fecha_modificada = fc_fecha_modificada(cursor4, nueva_fecha)
+cita_fecha_modificada = fc_fecha_modificada(cursor4, nueva_fecha)
 
 
 
@@ -368,7 +368,7 @@ def fc_cita_anulada(cursor):
         print(linea)
         
 
-# cita_anulada = fc_cita_anulada(cursor5)
+cita_anulada = fc_cita_anulada(cursor5)
 
 conexion1.close()
 
