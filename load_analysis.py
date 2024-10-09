@@ -4,8 +4,8 @@ from os import system
 import pandas as pd
 import matplotlib.pyplot as plt
 
-folder = "/Users/hassania/Downloads/"  # Replace with the actual path to the folder
-file = "Solubility.csv"              # Replace with the actual filename if different
+folder = "/Users/Downloads/"  
+file = "Solubility.csv"             
 
 path = os.path.join(folder, file)
 path = os.path.abspath(path)
